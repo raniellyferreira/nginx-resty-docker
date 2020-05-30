@@ -89,11 +89,11 @@ RUN set -x \
     --add-module=/tmp/lua-nginx-module-${NGINX_LUA_MODULE_VERSION} \
     && make install
 
-RUN nginx -t
-
 WORKDIR /etc/nginx
 
-COPY nginx.conf ./nginx.conf
+COPY nginx.conf .
+
+RUN nginx -t
 
 RUN set -x \
     && rm -rf /var/cache/apk/* /tmp/* \
