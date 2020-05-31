@@ -5,7 +5,7 @@
 
 https://hub.docker.com/r/raniellyf/nginx-resty
 ```sh
-$ docker push raniellyf/nginx-resty:latest
+$ docker pull raniellyf/nginx-resty:latest
 ```
 
 Documentaçao OpenRest
